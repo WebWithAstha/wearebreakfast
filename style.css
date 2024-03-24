@@ -1,0 +1,427 @@
+@font-face {
+    font-family: font1;
+    src: url(./fonts/Equip-Medium.ttf);
+}
+
+@font-face {
+    font-family: thin;
+    src: url(./fonts/Equip-Thin.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font1;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#page1 {
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    z-index: 99;
+
+}
+
+#page1 #nav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    color: #ffd500;
+    gap: 3vw;
+    width: 100%;
+    padding: 2.5vw 2.8vw;
+    z-index: 99;
+}
+
+#page1 #nav h3 {
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+#page1 #nav h3:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#page1 .collage {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    z-index: 80;
+    height: 50vw;
+    overflow: hidden;
+}
+
+.collage img {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.collage .sky {
+    width: 100%;
+    left: 0;
+}
+
+.collage .mountain {
+    object-fit: contain;
+    bottom: -4%;
+    right: 0;
+    height: 80%;
+    width: 100%;
+    z-index: 98;
+}
+
+.collage .head {
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 58.5%;
+    object-fit: contain;
+    height: max-content;
+    z-index: 99;
+}
+
+.collage .switch {
+    z-index: 99;
+    width: 3.3vw;
+    bottom: 13%;
+    left: 16%;
+    height: max-content;
+}
+
+.collage .omlet-disk {
+    position: absolute;
+    aspect-ratio: 1/1;
+    height: 24vw;
+    width: 24vw;
+    bottom: 0;
+    right: 17.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.collage .omlet-disk .omlet {
+    z-index: 1;
+    width: 75%;
+    object-fit: contain;
+}
+
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+    height: max-content;
+    position: relative;
+    background: linear-gradient(to right bottom, #c5a8bd, #e5a3ab, #dfaebf);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#page2 img {
+    position: absolute;
+}
+
+.melt {
+    top: -1%;
+    width: 100%;
+    z-index: -1;
+}
+
+.tape {
+    right: 5%;
+    top: 0;
+    width: 28vw;
+    transform: translateY(-30%);
+}
+
+.berry {
+    width: 12vw;
+    left: 24%;
+}
+
+.berry1 {
+    left: 3%;
+    top: -5%;
+}
+
+.berry2 {
+    top: 16%;
+    left: 14%;
+    width: 11vw;
+}
+
+.berry3 {
+    top: -8%;
+}
+
+#page2 h2 {
+    font-weight: 100;
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#page2 svg {
+    margin-top: 4vw;
+    width: 100%;
+}
+
+.hunger-sticker {
+    right: 9%;
+    bottom: 11%;
+    width: 16vw;
+}
+
+#page3 {
+    width: 100%;
+    min-height: 100vh;
+    height: 210vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(to right bottom, #e5a3ab, #dfaebf, #bcb7da);
+
+}
+
+#page3 h1 {
+    width: 75%;
+    line-height: 1.2;
+    text-align: center;
+    font-family: thin;
+    font-size: 4.3vw;
+    color: white;
+    font-weight: 400;
+    position: relative;
+    z-index: 4;
+    margin-top: 6vw;
+}
+
+#page3 #figure-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+
+}
+
+#page3 #figure-container .img-top {
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    top: 0%;
+    transform: translate(0%, -50%);
+    z-index: 1;
+    height: max-content;
+    width: 60%;
+
+}
+
+#page3 #figure-container .img-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 68%;
+    height: max-content;
+    z-index: 2;
+
+}
+
+#page4 {
+    width: 100%;
+    background-color: #e89d9f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8vw;
+    gap: 4vw;
+}
+
+#page4 .work-text {
+    position: relative;
+}
+
+#page4 .work-text h2 {
+    top: 0;
+    left: 0;
+    line-height: 1;
+    font-size: 4.2vw;
+    color: white;
+}
+
+#page4 .work-text h2:nth-child(1) {
+    position: relative;
+}
+
+#page4 .img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#page4 .img-container img {
+    width: 40%;
+}
+
+#page4 .img-container .rose {
+    width: 63%;
+}
+
+#page4 .img-container .hand {
+    width: 30%;
+    transform: translateY(30%);
+}
+
+#page4 h1 {
+    width: 90%;
+    line-height: 1.2;
+    text-align: center;
+    font-family: thin;
+    font-size: 4.3vw;
+    color: white;
+    font-weight: 400;
+}
+
+.moving-animation {
+    width: 100%;
+}
+
+#linear-animated-text {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    gap: 2vw;
+    padding: 1vw;
+}
+
+#linear-animated-images {
+    color: white;
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+    padding: 1vw;
+}
+
+#linear-animated-images img {
+    width: 30vw;
+    height: 18vw;
+    object-fit: cover;
+
+}
+
+#page5 {
+    width: 100%;
+    height: 300vh;
+    background: linear-gradient(to right bottom, #e5a3ab, #dfaebf, #bcb7da);
+    padding-top: 4vw;
+    position: relative;
+
+}
+
+#page5 .text {
+    font-size: 2.6vw;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 10vw;
+}
+
+#page5 img {
+    position: absolute;
+}
+
+#page5 .hollywood-mountain {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#page5 .coffee-cup {
+    z-index: 1;
+    bottom: 10%;
+    left: 0;
+    width: 60%;
+}
+
+#page5 .female-diver {
+    z-index: 2;
+    top: 20%;
+    left: 70%;
+    rotate: 18deg;
+    transform: translateX(-50%);
+    width: 10%;
+}
+
+footer {
+    background-color: hsl(50, 100%, 59%);
+    padding: 4vw 3vw;
+    padding-top: 8vw;
+
+}
+
+footer .flex {
+    display: flex;
+    gap: 4vw;
+    justify-content: space-between;
+}
+
+footer .footer-left h1 {
+    font-size: 12vw;
+    line-height: .85;
+    color: white;
+}
+
+footer .footer-left h4 {
+    font-size: 1.3vw;
+    font-weight: 100;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+footer .footer-right {
+    align-items: flex-start;
+}
+
+footer .footer-right h3 {
+    font-size: 1vw;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+footer .footer-right p {
+    font-family: thin;
+    font-size: 1vw;
+    width: 50%;
+    line-height: 1.5;
+}
+
+footer .bottom {
+    margin-top: 4vw;
+}
+
+footer .bottom p {
+    font-family: thin;
+}
